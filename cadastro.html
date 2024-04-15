@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cadastros.css">
+
+    <title>Locadora JPL</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo da locadora -->
+                <a href="#"><img src="Imagem/logo.PNG" alt="Logo da locadora de filmes JPL"></a>
+                <!-- Lista de links de navegação -->
+                <ul class="nav-itens">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="filmes.html">Filmes</a></li>
+                    <li><a href="#">Cadastros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Div para o texto -->
+    <div class="texto">
+        <h2 class="titulo">Esses são os clientes cadastrados</h2>
+    </div>
+
+    <!-- Seção principal -->
+    <main>
+        <!-- Container do formulário -->
+        <div class="container">
+            <!-- Formulário de cadastro -->
+            <div class="form">
+                <form action="#">
+                    <!-- Cabeçalho do formulário -->
+                    <div class="form-header">
+                        <div class="titulo">
+                            <h2>Cadastre-se</h2>
+                        </div>
+                    </div>
+                    <!-- Inputs do formulário -->
+                    <div class="input-group">
+                        <!-- Nome -->
+                        <div class="input-box">
+                            <label for="nome" class="titulo">Primeiro nome</label>
+                            <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                        </div>
+                        <!-- Sobrenome -->
+                        <div class="input-box">
+                            <label for="sobrenome" class="titulo">Sobrenome</label>
+                            <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite o seu sobrenome" required>
+                        </div>
+                        <!-- Email -->
+                        <div class="input-box">
+                            <label for="email" class="titulo">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Digite o seu email" required>
+                        </div>
+                        <!-- Valor da locação -->
+                        <div class="input-box">
+                            <label for="locacao" class="titulo">Valor da locação</label>
+                            <input type="number" id="locacao" name="locacao" placeholder="Valor da locação" required>
+                        </div>
+                        <!-- Data de nascimento -->
+                        <div class="input-box">
+                            <label for="data" class="titulo">Data de nascimento</label>
+                            <input type="date" id="data" name="data" placeholder="Sua data de nascimento" required>
+                        </div>
+                    </div>
+
+                    <!-- Inputs de seleção de sexo e confirmação -->
+                    <div class="sexo-inputs">
+                        <!-- Título para os inputs de sexo -->
+                        <div class="genero-titulo">
+                            <h4 class="titulo">Sexo</h4>
+                        </div>
+                        <!-- Inputs de seleção de sexo -->
+                        <div class="sexo">
+                            <div class="sexo-input">
+                                <input type="radio" id="masculino" name="sexo" value="masculino" checked>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="feminino" name="sexo" value="Feminino"/>
+                                <label for="feminino">Feminino</label>
+                            </div>
+                        </div>
+                        <!-- Título para os inputs de confirmação -->
+                        <div class="confirm-titulo">
+                            <h4 class="titulo">Você confirma essas informações?</h4>
+                        </div>
+                        <!-- Inputs de confirmação -->
+                        <div class="confirm">
+                            <div class="confirm-input">
+                                <input type="checkbox" id="sim" name="checkbox" value="sim" checked>
+                                <label for="sim">Sim</label>
+                                <input type="checkbox" id="nao" name="checkbox" value="nao">
+                                <label for="nao">Não</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botão de salvar -->
+                    <div class="salvar">
+                        <button type="submit" class="butao" id="salvar">💾 Salvar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Tabela para listar os clientes cadastrados -->
+        <table border="1" class="darkTable">
+            <caption class="titulo">
+                Relação de clientes
+            </caption>
+            <thead>
+                <!-- Cabeçalho da tabela -->
+                <th>Nome</th>
+                <th>Sobrenome</th>
+                <th>Nascimento</th>
+                <th>Email</th>
+                <th>Valor da locação</th>
+                <th>Sexo</th>
+                <th>Confirmação</th>
+            </thead>
+            <tbody id="listaClientes">
+                <!-- Corpo da tabela, será preenchido dinamicamente com dados dos clientes -->
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Importação do script JavaScript -->
+    <script type="module" src="js/script.js"></script>
+</body>
+</html>

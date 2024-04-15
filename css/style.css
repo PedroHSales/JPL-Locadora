@@ -1,0 +1,156 @@
+/*Imports de fontes do Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*aplica o box-sizing: border-box; a todos os elementos, Além disso, define a família de fontes padrão para 
+todos os elementos como 'Montserrat', 'Kanit', ou, se não disponíveis, uma fonte sans-serif genérica.*/
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'Kanit', sans-serif;
+}
+
+/*estiliza o corpo da página. adicionando um gradient linear de três cores para o fundo. 
+O corpo está centralizado na página e tem um preenchimento de 16 pixels. A cor do texto é branca.*/
+body{
+    background: rgb(0,0,0);
+    background: linear-gradient(133deg, rgba(0,0,0,1) 0%, rgba(24,24,36,1) 35%, rgba(100,126,131,1) 100%);
+
+    padding: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    color: white;
+}
+
+/*o restante se uma lógica semelhante estilizando toda a página em forma de cascata*/
+header{
+    width: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(117deg, rgba(0,0,0,1) 0%, rgba(24,24,36,1) 62%, rgba(100,126,131,1) 100%);
+    border-radius: 12px;
+}
+
+header nav.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+header nav.navbar div.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.navbar div.navbar-container a{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+header nav.navbar div.navbar-container a img{
+    width: 100px;
+    height: 100px;
+}
+
+header nav.navbar div.navbar-container ul.nav-itens{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav.navbar div.navbar-container ul.nav-itens li{
+    display: inline-block; 
+    margin: 8px;
+}
+
+header nav.navbar div.navbar-container ul.nav-itens li a{
+    text-decoration: none; /* remove o sublinhado do link */
+    color: white;
+    font-weight: bold; /* negrito */
+    font-size: 14px;
+}
+
+header nav.navbar div.navbar-container ul.nav-itens li a:hover{
+    color: #000;
+    background-color: #CCC;
+    padding: 16px;
+    border-radius: 12px;
+}
+
+div.texto{
+    margin-top: 20px;
+}
+
+.titulo{
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+.txt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+main.card{
+    display: flex;
+    padding: 32px;
+}
+
+main.card section.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: rgb(0,0,0);
+    background: linear-gradient(117deg, rgba(0,0,0,1) 0%, rgba(24,24,36,1) 62%, rgba(100,126,131,1) 100%);
+    padding: 1rem 1.5rem;
+    border-radius: 12px;
+    max-height: 300px;
+    margin-left: 32px;
+    box-shadow: 20px 20px 50px -30px white;
+}
+
+main.card section.cards .icon{
+    width: 100px;
+    height: 200px;
+}
+
+main.card section.cards img{
+    width: 100%;
+}
+
+main.card section.cards h3{
+    margin: 10px 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+}
+
+main.card section.cards span{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    max-width: 240px;
+}
+
+main.card section.cards .btn{
+    margin-top: 12px;
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    background-color: white;
+    border: 0;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 70%;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+main.card section.cards .btn:hover{
+    background-color: #aaaa;
+}

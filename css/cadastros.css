@@ -1,0 +1,172 @@
+*{/*remove o preenchimento e a margem padrão e definindo box-sizing: border-box para página toda*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+main{/*estiliza a tag main, deixand um container flexível com direção de coluna centralizando o conteúdo dentro do main*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body{/*Estiliza o corpo da página body, fazendo ele ocupar toda a largura e altura da janela e centralizando o conteúdo*/
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container{/*estiliza um container div. Ele deve ocupar metade da largura da janela do navegador 
+    e 70% da altura visível da janela definindo como um flex container e aplicando sombra*/
+    width: 50%;
+    height: 70vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgb(0, 0, .212);
+}
+
+div.container div.form{/*estiliza o formulário dentro do container. Ele deve ocupar toda a largura do container, 
+    ser um flex container com direção de coluna e centralizando o conteúdo*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFF;
+    padding: 3rem;
+    color: black;
+    border-radius: 12px;
+}
+
+div.container div.form form div.form-header{
+    margin-bottom: 0.35rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.container div.form form div.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+div.container div.form form div.input-group div.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+}
+
+div.container div.form form div.input-group div.input-box input{
+    margin: 0.6rem 0;
+    padding:0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #000;
+}
+
+div.container div.form form div.sexo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    padding: 0 0 0.2rem;
+}
+
+div.container div.form form div.sexo div.sexo-input{
+    display: flex;
+    align-items: center;
+}
+
+div.container div.form form div.sexo div.sexo-input input{
+    margin-right: 0.35rem;
+    margin-left: 0.35rem;
+}
+
+div.container div.form form div.confirm{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+    padding: 0 0 0.2rem;
+}
+
+div.container div.form form div.confirm div.confirm-input{
+    display: flex;
+    align-items: center;
+}
+
+div.container div.form form div.confirm div.confirm-input input{
+    margin-right: 0.35rem;
+    margin-left: 0.35rem;
+}
+
+.butao{
+    padding: 0.5rem;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background: rgb(0,0,0);
+    background: linear-gradient(133deg, rgba(0,0,0,1) 0%, rgba(24,24,36,1) 35%, rgba(100,126,131,1) 100%);
+    cursor: pointer;
+    margin-top: 0.35rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+table.darkTable {/*Formata a tabela seguindo a paleta de cores do site*/
+    margin-top: 20px;
+
+    font-family: "Arial Black", Gadget, sans-serif;
+    border: 2px solid #000000;
+    border-radius: 8PX;
+    background-color: #4A4A4A;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    border-collapse: collapse;
+  }
+
+  table.darktable caption{
+    margin-bottom: 20px;
+  }
+
+  table.darkTable td, table.darkTable th {
+    border: 1px solid #4A4A4A;
+    padding: 3px 2px;
+  }
+  table.darkTable tbody td {
+    font-size: 13px;
+    color: #E6E6E6;
+  }
+  table.darkTable tr:nth-child(even) {
+    background: #888888;
+  }
+  table.darkTable thead {
+    background: #000000;
+    border-bottom: 3px solid #000000;
+    border-radius: 8PX;
+  }
+  table.darkTable thead th {
+    font-size: 15px;
+    font-weight: bold;
+    color: #E6E6E6;
+    text-align: center;
+    border-left: 2px solid #4A4A4A;
+  }
+  table.darkTable thead th:first-child {
+    border-left: none;
+  }
+  
+  table.darkTable tfoot {
+    font-size: 12px;
+    font-weight: bold;
+    color: #E6E6E6;
+    background: #000000;
+    background: -moz-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+    background: -webkit-linear-gradient(top, #404040 0%, #191919 66%, #000000 100%);
+    background: linear-gradient(to bottom, #404040 0%, #191919 66%, #000000 100%);
+    border-top: 1px solid #4A4A4A;
+  }
+  table.darkTable tfoot td {
+    font-size: 12px;
+  }
