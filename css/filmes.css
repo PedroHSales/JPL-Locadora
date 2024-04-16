@@ -5,27 +5,38 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'Kanit', sans-serif;
 }
-/*move o cabeçalho para cima em 120 pixels, possivelmente para sobrepor algum conteúdo na parte superior da página.*/
+
 header{
-    margin-top: -120px;
+    margin-bottom: 2rem;
 }
+
 /*Define a altura do corpo da página como 100% da altura da viewport.*/
 body{
-    height: 100vh;
+    height: 100%;
 }
 /*Aplica uma margem superior de 10 pixels para os elementos <div> com a classe "texto".*/
 div.texto{
-    margin-top: 10px;
+    margin-top: 1rem;
 }
 /*O restante do código segue a lógica de cascata para estilizar os cartões dos filmes*/
 .titulo{
     font-family: 'Kanit', sans-serif;
     font-weight: 600;
+    color: beige;
+}
+
+.txt{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    margin-top: 1rem;
 }
 
 main.card{
     display: flex;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
     padding: 32px;
+    height: 100%;
 }
 
 main.card section.cards{
@@ -44,7 +55,7 @@ main.card section.cards{
 
 main.card section.cards .icon{
     width: 100px;
-    height: 250px;
+    height: 350px;
 }
 
 main.card section.cards img{
@@ -76,6 +87,10 @@ main.card section.cards .btn{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
+}
+
+main.card section.cards .btn:hover{
+    background-color: #aaaa;
 }
 
 main.card section.cards .btn:hover{
