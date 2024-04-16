@@ -1,94 +1,122 @@
-*{/*aplica um reset geral no estilo da página, removendo margens e preenchimentos padrão e definindo box-sizing: border-box;
- para todos os elementos. Além disso, define a família de fontes padrão para toda a página como 'Montserrat', 'Kanit', ou, se não disponíveis, a fonte sans-serif genérica.*/
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Montserrat', 'Kanit', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-header{
-    margin-bottom: 2rem;
-}
+    <!-- Importação dos arquivos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/filmes.css">
 
-/*Define a altura do corpo da página como 100% da altura da viewport.*/
-body{
-    height: 100%;
-}
-/*Aplica uma margem superior de 10 pixels para os elementos <div> com a classe "texto".*/
-div.texto{
-    margin-top: 1rem;
-}
-/*O restante do código segue a lógica de cascata para estilizar os cartões dos filmes*/
-.titulo{
-    font-family: 'Kanit', sans-serif;
-    font-weight: 600;
-    color: beige;
-}
+    <!-- Título da página -->
+    <title>Locadora JPL</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <!-- Barra de navegação -->
+        <nav class="navbar">
+            <div class="navbar-container">
+                <!-- Logo da locadora -->
+                <a href="#"><img src="Imagem/logo.PNG" alt="Logo da locadora de filmes JPL"></a>
+                <!-- Lista de links de navegação -->
+                <ul class="nav-itens">
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#">Filmes</a></li>
+                    <li><a href="cadastro.html">Cadastros</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-.txt{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    margin-top: 1rem;
-}
+    <!-- Div para o texto introdutório -->
+    <div class="texto">
+        <!-- Título principal -->
+        <h2 class="titulo">Bem-vindo a seção de filmes da locadora JPL</h2>
+        <p class="txt">Aqui você encontra todo os melhores filmes da atualidade e de antigamente para locação alugar filmes.</p>
+        <br>
+    </div>
 
-main.card{
-    display: flex;
-    margin-top: 1rem;
-    margin-bottom: 1.5rem;
-    padding: 32px;
-    height: 100%;
-}
-
-main.card section.cards{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    background: rgb(0,0,0);
-    background: linear-gradient(117deg, rgba(0,0,0,1) 0%, rgba(24,24,36,1) 62%, rgba(100,126,131,1) 100%);
-    padding: 1rem 1.5rem;
-    border-radius: 12px;
-    max-height: 350px;
-    margin-left: 15px;
-    box-shadow: 20px 20px 50px -30px white;
-}
-
-main.card section.cards .icon{
-    width: 100px;
-    height: 350px;
-}
-
-main.card section.cards img{
-    width: 100%;
-}
-
-main.card section.cards h3{
-    margin: 10px 0;
-    font-family: 'Kanit', sans-serif;
-    font-weight: 500;
-}
-
-main.card section.cards span{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 300;
-    max-width: 240px;
-}
-
-main.card section.cards .btn{
-    margin-top: 12px;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    background-color: white;
-    border: 0;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 70%;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: bold;
-    color: black;
-}
-
-main.card section.cards .btn:hover{
-    background-color: #aaaa;
-}
+    <!-- Seção principal para os filmes -->
+    <main class="card">
+        <!-- Seção individual para cada filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/kung2.jfif" alt="Imagem promocional do filme kung fu panda">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Kung fu panda 4</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: ação e aventura</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+        <!-- Seção individual para outro filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/duna2.jfif" alt="Imagem promocional do filme Duna parte 2">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Duna parte 2</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: ação e aventura</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+        <!-- Seção individual para outro filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/maverick.jfif" alt="Imagem promocional do filme top gun maverick">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Top Gun: maverick</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: ação</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+        <!-- Seção individual para outro filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/7³.jfif" alt="Imagem promocional do filme Seven Os sete pecados capitais">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Seven</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: suspense e policial</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+        <!-- Seção individual para outro filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/gg.jfif" alt="Imagem promocional do filme Gente Grande2">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Gente Grande 2</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: ação e aventura</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+        <!-- Seção individual para outro filme -->
+        <section class="cards">
+            <!-- Imagem promocional do filme -->
+            <div class="icon">
+                <img src="Imagem/cars.jfif" alt="Imagem promocional do filme Carros">
+            </div>
+            <!-- Título do filme -->
+            <h3 class="titulo">Carros</h3>
+            <!-- Descrição do filme -->
+            <span class="txt">Gênero: Comédia e animação</span>
+            <!-- Botão para alugar o filme -->
+            <a href="cadastro.html" class="btn">Alugar🎬</a>
+        </section>
+    </main>
+</body>
+</html>
